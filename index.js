@@ -35,7 +35,7 @@ function makeCombo () {
   randomize(combo);
   next = combo[random];
 }
-
+//functions for when x/o clicked when choosing user
 $('#x').click(function() {
 	current = "X";
 	computer = "O";

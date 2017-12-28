@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title><!--insert title here--></title>
+  <title>Tic Tac Toe</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <!--font awesome stylesheet-->
@@ -20,21 +20,55 @@
 <body>
   <div class="container-fluid">
     <h1 id="header" class="text-center">Tic Tac Toe</h1>
-    <div class="container-fluid" id="gameArea">
+    <p id="subheader" class="text-center">a <a href="https://www.freecodecamp.org/challenges/build-a-tic-tac-toe-game" id="fcc-link">FreeCodeCamp</a> Challenge</p>
+    <!--welcome page-->
+    <div class="container-fluid" id="first">
+      <h2 class="text-center">Choose one:</h2>
+      <div class="row">
+        <button class="btn" id="x">X</button>
+        <button class="btn" id="o">O</button>
+      </div>
+    </div>
+    <!--win page-->
+    <div class="container-fluid hide" id="win">
+      <h2 class="text-center">Congrats! You won!<h2>
+    </div>
+    <!--lose page-->
+    <div class="container-fluid hide" id="lose">
+      <h2 class="text-center">Oh no, it looks like you lost.<h2>
+    </div>
+    <!--tie page-->
+    <div class="container-fluid hide"> id="tie">
+      <h2 class="text-center">No winner! It's a tie.</h2>
+    </div>
+    <!--game page-->
+    <div class="container-fluid hide" id="gameBoard">
     <div class="container-fluid row">
-      <div id="one" class="board"></div>
-      <div id="two" class="board"></div>
-      <div id="three" class="board"></div>
+      <div id="one" class="board text-center"></div>
+      <div id="two" class="board text-center"></div>
+      <div id="three" class="board text-center"></div>
     </div>
     <div class="container-fluid row">
-      <div id="four" class="board"></div>
-      <div id="five" class="board"></div>
-      <div id="six" class="board"></div>
+      <div id="four" class="board text-center"></div>
+      <div id="five" class="board text-center"></div>
+      <div id="six" class="board text-center"></div>
     </div>
     <div class="container-fluid row">
-      <div id="seven" class="board"></div>
-      <div id="eight" class="board"></div>
-      <div id="nine" class="board"></div>
+      <div id="seven" class="board text-center"></div>
+      <div id="eight" class="board text-center"></div>
+      <div id="nine" class="board text-center"></div>
+    </div>
+
+    <div class="container-fluid row">
+      <div id="scoreboard" class="text-center">
+        <p id="bottom">Player:</p>
+        <div id="player-score"></div>
+        <p id="bottom">Computer:</p>
+        <div id="computer-score"></div>
+      </div>
+    </div>
+    <div class="container-fluid row">
+      <button class="btn btn-danger" id="start-over">reset</button>
     </div>
   </div>
 </div>
