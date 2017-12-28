@@ -101,3 +101,11 @@ body {
   margin: 3px;
   margin-top: 15px;
 }
+
+.fa {
+  color: #fff;
+}
+
+.fa:hover {
+  color: #6F2232;
+}
