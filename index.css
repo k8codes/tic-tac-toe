@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope|Coming+Soon');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Fascinate+Inline');
+
+
+
+body {
+	background-color: #1A1A1D;
+}
+
+#header {
+  font-family: 'Fjalla One';
+  color: #6F2232;
+}
+
+#gameArea {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  justify-content: center;
+}
+
+.board {
+  border: 1px solid #1a1a1d;
+  background-color: white;
+  height: 100px;
+  width: 100px;
+  box-shadow: 4px 4px 5px grey;
+}
