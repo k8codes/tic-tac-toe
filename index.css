@@ -41,7 +41,7 @@ body {
 .board {
   border: 1px solid #1a1a1d;
   font-family: 'Annie Use Your Telescope', sans-serif;
-  font-size: 3vw;
+  font-size: 2em;
   color: red;
   padding: 20px;
   background-color: white;
@@ -50,11 +50,19 @@ body {
   box-shadow: 4px 4px 5px grey;
 }
 
+@media only screen and (max-width: 400px) {
+    .board {
+        font-size: 2em;
+				height: 50px;
+				width: 50px;
+    }
+}
+
 #x, #o {
   background-color: #7f8082;
   margin: 2px;
   font-family: 'Annie Use Your Telescope', sans-serif;
-  font-size: 2vw;
+  font-size: 2em;
 }
 
 #first {
